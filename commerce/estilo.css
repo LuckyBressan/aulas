@@ -5,8 +5,10 @@
     border: 1px solid black;
 }
 #corpo {
-    display: inline-block;
-    width: 600px;
+    position: absolute;
+    top: 420px;
+    left: 503px;
+    width: 1095px;
     height: 600px;
     border: 1px solid black;
 }

@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+
+    include "conn/conexao.php";
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,6 +24,9 @@
         echo "<div id='corpo'>";
             if(isset($_GET['pagina']) && $_GET['pagina'] == 'eletronicos') {
                 include "eletronicos.php";
+            }
+            if(isset($_GET['pagina']) && $_GET['pagina'] == 'home') {
+                include "home.php";
             }
         echo "</div>";
         ?>
