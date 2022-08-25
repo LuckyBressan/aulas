@@ -1,0 +1,31 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: #fb8500;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+    color: #023047;
+}
+
+input.button, input.button-dado {
+    width: 80px;
+    height: 40px;
+    padding: 5px auto;
+    border: 1px solid grey;
+    color: white;
+    background-color: #023047;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+input.button-dado {
+    width: 120px;
+    color: white;
+    background-color: #023047;
+}

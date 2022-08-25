@@ -1,0 +1,14 @@
+table {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    width: 900px;
+    height: 100px;
+    border: 1px solid #fb8500;
+}
+#tr_principal {
+    background-color: #023047;
+    color: white;
+}
+#tr_secundaria {
+    color: #fb8500
+}

@@ -1,0 +1,37 @@
+#resposta 
+{
+    border: 1px solid #d90429;
+    width: 280px;
+    height: 80px;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: text-bottom;
+    color: #d90429;
+}
+#return {
+    position: absolute;
+    top: 150px;
+    left: 120px;
+    background-color: #d90429;
+    color: white;
+    width: 60px;
+    height: 30px;
+}
+#ano {
+    border: 1px solid #d90429;
+    border-radius: 5px;
+    height: 25px;
+}
+#consulta {
+    background-color: #d90429;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #8d99ae;    
+}
+#label {
+    color: #d90429;
+}

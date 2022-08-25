@@ -1,0 +1,54 @@
+#corpo {
+    border: 1px solid #d90429;
+    width: 300px;
+    height: 330px;
+}
+#valor {
+    border: 1px solid #8d99ae;
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+#botao {
+    background-color: #8d99ae;
+    color: white;
+    border: 1px solid #d90429;
+    position: absolute;
+    top: 120px;
+    left: 55px;
+    width: 200px;
+    height: 40px;
+}
+#botao2 {
+    background-color: #8d99ae;
+    color: white;
+    border: 1px solid #d90429;
+    position: absolute;
+    top: 190px;
+    left: 55px;
+    width: 200px;
+    height: 40px;
+}
+#resultado {
+    border: 1px solid #8d99ae;
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+#return {
+    position: absolute;
+    top: 350px;
+    left: 120px;
+    background-color: #d90429;
+    color: white;
+    width: 60px;
+    height: 30px;
+}

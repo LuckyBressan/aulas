@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio JS 1</title>
+    <script lang="JavaScript">
+        function f2d(valor) {
+            $valor = valor.toString();
+            console.log($valor.lenght);
+            if($valor.lenght == 1) {
+                $valor = "0"+$valor;
+            }
+            return ($valor)
+        }
+        function fStart() {
+            var data = new Date();
+            console.log("Data:",data);
+
+            document.getElementById("vData").innerHTML = f2d(data.getDate())+"/"+f2d((data.getMonth()+1))+"/"+f2d(data.getFullYear());
+            document.getElementById("vHora").innerHTML = f2d(data.getHours())+":"+f2d(data.getMinutes())+":"+f2d(data.getSeconds());
+        }
+    </script>
+</head>
+<body onload="fStart()">
+    <h1>Você abriu esta página</h1>
+    <h3>Data: <span id="vData"></span></h3>
+    <h3>Hora: <span id="vHora"></span></h3>
+</body>
+</html>

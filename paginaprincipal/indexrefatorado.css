@@ -1,0 +1,47 @@
+#cabeca{
+    width: 1716px;
+    height: 100px;
+    background: #023047;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    line-height: 100px;
+    vertical-align: text-bottom;
+}
+#menu{
+    height: 416px;
+    width: 200px;
+    border: 2px solid #fb8500;
+    overflow: auto;
+}
+#menu_ul {
+    list-style-type: none;
+    padding: 0;
+}
+#corpo{
+    position: absolute;
+    top: 137px;
+    left: 202px;
+    width: 1510px;
+    height: 416px;
+    border: 2px solid #fb8500;
+    overflow: auto;
+}
+#final{
+    position: absolute;
+    width: 1716px;
+    height: 50px;
+    background: #023047;
+    color: white;
+    text-align: center;
+}
+#formulario {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#resposta {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}

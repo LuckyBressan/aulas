@@ -1,0 +1,21 @@
+#table {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 400px;
+    height: 200px;
+    border: 2px solid #fb8500;
+}
+#linha {
+    background: #023047;
+    color: white;
+}
+
+.linha1 {
+    background: #023047;
+    color: white;
+}
+.linha3 {
+    background: #023047;
+    color: white;
+}

@@ -1,0 +1,38 @@
+#table {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid #fb8500;
+    text-align: center;
+}
+#linha {
+    background: #023047;
+    color: white;
+}
+
+.linha0 {
+    background: #023047;
+    color: white;
+}
+.linha2 {
+    background: #023047;
+    color: white;
+}
+.linha4 {
+    background: #023047;
+    color: white;
+}
+.linha6 {
+    background: #023047;
+    color: white;
+}
+.linha8 {
+    background: #023047;
+    color: white;
+}
+.linha10 {
+    background: #023047;
+    color: white;
+}

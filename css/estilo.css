@@ -1,0 +1,12 @@
+p.primeiro {
+    color:rgb(214, 79, 255);
+}
+p.segundo {
+    color:rgb(79, 199, 255);
+}
+h1,h2,h3{
+    color:rgb(184, 185, 89);
+}
+table.tabela tr td a{
+    color: rgb(79, 255, 217);
+}

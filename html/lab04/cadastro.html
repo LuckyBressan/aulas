@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form action="informa.php" method="POST">
+        <fieldset>
+            <legend>Pessoais</legend>
+            NOME:
+            <input type="text" name="nome"><br><br>
+            CPF:
+            <input type="text" name="cpf"><br><br>
+            DATA DE NASCIMENTO:
+            <input type="date" name="nascimento"><br><br>
+            SEXO:
+            <input type="radio" id="sexo_1" name="sexo"> 
+            <label for="sexo_1">M</label>
+            <input type="radio" id="sexo_2" name="sexo"> 
+            <label for="sexo_2" >F</label>
+            <input type="radio" id="sexo_3" name="sexo"> 
+            <label for="sexo_3" >OUTRO</label>
+            <br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Contato</legend>
+            TELEFONE:
+            <input type="text" name="telefone"><br><br>
+            E-MAIL:
+            <input type="email" name="email"><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Local</legend> 
+            ESTADO:
+            <select name="estado">
+                <option value="">**Selecione**</option>
+                <option value="SC">SANTA CATARINA</option>
+                <option value="RS">RIO GRANDE DO SUL</option>
+                <option value="PR">PARANÁ</option>
+            </select><br><br>
+            CIDADE:
+            <select name="cidade">
+                <option value="">**Selecione**</option>
+                <option value="FLORIANÓPOLIS">FLORIANÓPOLIS</option>
+                <option value="PORTO ALEGRE">PORTO ALEGRE</option>
+                <option value="CURITIBA">CURITIBA</option>
+            </select><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Cores</legend>
+            <input type="checkbox" id="cor_1" name="cor[]" value="1">
+            <label for="cor_1">PRETO</label>
+            <input type="checkbox" id="cor_2" name="cor[]" value="2">
+            <label for="cor_2">BRANCO</label>
+            <input type="checkbox" id="cor_3" name="cor[]" value="3">
+            <label for="cor_3">PRATA</label>
+            <input type="checkbox" id="cor_4" name="cor[]" value="4">
+            <label for="cor_4">VERMELHO</label>
+        </fieldset><br>
+        <fieldset>
+            <legend>Marcas</legend>
+            <input type="checkbox" id="marca_1" name="marca[]" value="1">
+            <label for="marca_1">FIAT</label>
+            <input type="checkbox" id="marca_2" name="marca[]" value="2">
+            <label for="marca_2">FORD</label>
+            <input type="checkbox" id="marca_3" name="marca[]" value="3">
+            <label for="marca_3">CHERRY</label>
+            <input type="checkbox" id="marca_4" name="marca[]" value="4">
+            <label for="marca_4">BMW</label>
+            <input type="checkbox" id="marca_5" name="marca[]" value="5">
+            <label for="marca_5">VOLKSWAGEN</label>
+            <input type="checkbox" id="marca_6" name="marca[]" value="6">
+            <label for="marca_6">CITROEN</label>
+        </fieldset><br>
+        <input type="submit" value="Enviar">  
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
