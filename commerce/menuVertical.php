@@ -3,6 +3,7 @@
   $categoria = $conn->prepare($sql);
   $categoria->execute();
   $i = 0;
+  $x = 1;
 
 
 ?>
@@ -11,9 +12,6 @@
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <?php 
     foreach($categoria as $linha) {
-      if($i!=0) {
-        $i++;
-      }
       ?>
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-heading<?php echo $cont[$i]; ?>">
@@ -28,44 +26,17 @@
           $categoria_f->execute(array('cat'=>$linha['id']));
           foreach($categoria_f as $linha_f) {
             ?>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"><?php echo $linha_f['descricao'] ?></div>
+              <div id="flush-collapse<?php echo $cont[$i]; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading<?php echo $cont[$i]; ?>" data-bs-parent="#accordionFlushExample">
+                <a class="link link-dark" href="?pagina=listagem&id=<?php echo $linha_f['id'] ?>"><div class="accordion-body"><?php echo $linha_f['descricao'] ?></div></a>
               </div>
-            <?php 
+            <?php
+            $x=$x+1;
           }
         ?>
       <?php
+      $i= $i+1;
     }
   ?>
-
-    
-  
-  
-  
-  
-  
-  
-  
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Móveis
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body"></div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        Roupas
-      </button>
-    </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body"></div>
-    </div>
-  </div>
 </div>
 
 

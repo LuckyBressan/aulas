@@ -28,6 +28,12 @@
             if(isset($_GET['pagina']) && $_GET['pagina'] == 'home') {
                 include "home.php";
             }
+            if(isset($_GET['pagina']) && $_GET['pagina'] == 'listagem') {
+                include "listagem.php";
+            }
+            if(isset($_GET['pagina']) && $_GET['pagina'] == 'listagem_p') {
+                include "produtos/listagem.php";
+            }
         echo "</div>";
         ?>
     </div>
