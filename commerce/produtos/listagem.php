@@ -5,28 +5,28 @@
 
     $linha = $produtos->fetch();
 ?>
-<div class="text-center border">
+<div class="text-center border" style="border: 1px solid #89c2d9;">
     <img  src="<?php echo $linha['imagem'] ?>" height="400">
 </div><br>
 <div class="text-center">
-    <h3><td><?php echo $linha['descricao'] ?></td></h3>
+    <h3 style="color: #2a6f97;"><td><?php echo $linha['descricao'] ?></td></h3>
 </div><br>
 
 
 <table class="table table-striped table-bordered">
-    <tr>
-        <td>Código</td>
-        <td><?php echo $linha['id'] ?></td>
+    <tr style="background-color: #a9d6e5;">
+        <td style="color: white; text-transform:uppercase;"><b>Código</b></td>
+        <td style="color: white;"><b><?php echo $linha['id'] ?></b></td>
     </tr>
     <tr>
-        <td>Características</td>
+        <td style="text-transform:uppercase;">Características</td>
         <td><?php echo $linha['caracteristicas'] ?></td>
     </tr>
-    <tr>
-        <td>Valor</td>
-        <td>R$ <?php echo $linha['valor'] ?></td>
+    <tr style="background-color: #a9d6e5;">
+        <td style="color: white; text-transform:uppercase;"><b>Valor</b></td>
+        <td style="color: white;"><b>R$ <?php echo $linha['valor'] ?></b></td>
     </tr>
-        <td>Estoque</td>
+        <td style="text-transform:uppercase ;">Estoque</td>
         <td><?php echo $linha['estoque'] ?></td>
     </tr>
 

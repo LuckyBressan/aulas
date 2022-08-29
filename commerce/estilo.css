@@ -1,25 +1,30 @@
 #menu {
+    position: absolute;
+    top: 43.3%;
+    left: 16.25%;
     width: 200px;
     height: 600px;
     overflow: auto;
-    border: 1px solid black;
+    border: 1px solid #89c2d9;
     
 }
 #corpo {
     position: absolute;
-    top: 420px;
-    left: 511px;
-    width: 1095px;
+    top: 43.3%;
+    left: 26.6%;
+    width: 1097px;
     height: 600px;
-    border: 1px solid black;
+    border: 1px solid #89c2d9;
     overflow: auto;
+}
+.navbar {
+    position: absolute;
+    top: 37.6%;
+    width: 67.5%;
 }
 .card {
     margin-left: 20px;
     margin-top: 20px;
-}
-.table1 {
-    border: 1px solid black;
 }
 .link {
     text-decoration: none;
