@@ -6,9 +6,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="?pagina=home" style="color: white;">Home</a>
-        </li>
+        <?php
+            $sql = "SELECT * from paginas where categoria = 'menu'";
+            $menu = $conn->prepare($sql);
+            $menu->execute();
+            while ($linha = $menu->fetch()) {
+              echo "<li class='nav-item'>";
+                  echo "<a class='nav-link active' aria-current='page' href='?pagina={$linha['url']}' style='color: white;'>{$linha['label']}</a>";
+              echo "</li>";
+            }
+        
+        ?>
         <!--<li class="nav-item">
           <a class="nav-link" href="#" style="color: white;">Link</a>
         </li>
@@ -30,7 +38,11 @@
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-light" type="submit">Search</button>
-      </form>
+      </form>&nbsp;&nbsp;
+      
+      <a href="?pagina=login" class="btn btn-outline-light btn-custom">
+        <img src="img/usuario.png" width="25">
+      </a>
     </div>
   </div>
 </nav>

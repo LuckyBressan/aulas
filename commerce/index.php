@@ -1,7 +1,7 @@
 <?php 
     session_start();
 
-    include "conn/conexao.php";
+    include "lib/conexao.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="estilo.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
         <img src="img/unidavi.jpg" class="img-fluid" alt="...">
         <?php 
         include "menu.php";
@@ -22,17 +22,18 @@
         echo "</div>";
         
         echo "<div id='corpo'>";
-            if(isset($_GET['pagina']) && $_GET['pagina'] == 'eletronicos') {
-                include "eletronicos.php";
-            }
-            if(isset($_GET['pagina']) && $_GET['pagina'] == 'home') {
-                include "home.php";
-            }
-            if(isset($_GET['pagina']) && $_GET['pagina'] == 'listagem') {
-                include "listagem.php";
-            }
-            if(isset($_GET['pagina']) && $_GET['pagina'] == 'listagem_p') {
-                include "produtos/listagem.php";
+            if(isset($_GET['pagina'])) {
+                $sql = "SELECT * from paginas where url = :url";
+                $paginas = $conn->prepare($sql);
+                $paginas->execute(array('url'=>$_GET['pagina']));
+                $linha = $paginas->fetch();
+                if(!empty($linha['url'])) {
+                    require_once $linha['url'].'.php';
+                } else {
+                    include '404.php';
+                }
+            } else {
+                include 'home.php';
             }
         echo "</div>";
         ?>
