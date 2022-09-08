@@ -11,10 +11,10 @@
         </div>
         <div class="mb-3">
             <label for="senha" class="form-label">Senha:</label>
-            <input type="password" class="form-control" id="senha" placeholder="name@example.com">
+            <input type="password" class="form-control" id="senha">
         </div>
         <div class="mb-3">
-            <input type="submit" class="btn btn-primary" id="acessar" value="Acessar">
+            <input type="submit" class="btn btn-primary" id="acessar" value="Logar">
         </div>
     </div>
 </form>

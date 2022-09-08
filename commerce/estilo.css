@@ -31,10 +31,7 @@
 ::-webkit-scrollbar {
     display: none;
 }
-.btn-custom {
-	padding: 6px 6px 6px 6px;
-	border-radius: 50px;
-}
+
 .login {
     border: 1px solid #89c2d9;
     border-radius: 10px;
@@ -45,4 +42,19 @@
 }
 #acessar {
     width: 100%;
+    background-color: #2a6f97;
+    border: #2a6f97;
+}
+#carrinho {
+    text-decoration: none;
+}
+#contador {
+    position: absolute;
+    left: 98.4%;
+    top: 20%;
+    padding: 0.5px 6px 0.5px 6px;
+	border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-size: 11px;
 }

@@ -38,11 +38,22 @@
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-light" type="submit">Search</button>
-      </form>&nbsp;&nbsp;
+      </form>&nbsp;&nbsp;&nbsp;&nbsp;
       
-      <a href="?pagina=login" class="btn btn-outline-light btn-custom">
+      <a href="?pagina=login" id="user">
         <img src="img/usuario.png" width="25">
-      </a>
+      </a> &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="?pagina=carrinho" id="carrinho">
+        <div id="contador">
+          <strong>
+            <?php
+            if(isset($_SESSION['carrinho'])){
+              echo count($_SESSION['carrinho']);
+            } ?>
+          </strong>
+        </div>
+        <img src="img/carrinho.png" width="25">
+      </a>&nbsp;&nbsp;
     </div>
   </div>
 </nav>

@@ -29,5 +29,10 @@
         <td style="text-transform:uppercase ;">Estoque</td>
         <td><?php echo $linha['estoque'] ?></td>
     </tr>
-
 </table>
+<form method="post">
+    <div class="text-center">
+        <input type="submit" value="Adicionar ao Carrinho" name="add_carrinho" class="btn btn-primary" style="width: 30%; height: 60px; background-color:#2a6f97; border:#2a6f97;">
+    </div>
+    
+</form>
