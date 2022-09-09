@@ -16,24 +16,7 @@
               echo "</li>";
             }
         
-        ?>
-        <!--<li class="nav-item">
-          <a class="nav-link" href="#" style="color: white;">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" style="color: white;">Disabled</a>
-        </li>!-->
+        ?>S
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -43,15 +26,17 @@
       <a href="?pagina=login" id="user">
         <img src="img/usuario.png" width="25">
       </a> &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="?pagina=carrinho" id="carrinho">
-        <div id="contador">
-          <strong>
+      <a href="?pagina=carrinho" class="position-relative carrinho">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light">
+          <strong style="color:#2a6f97">
             <?php
             if(isset($_SESSION['carrinho'])){
               echo count($_SESSION['carrinho']);
+            } else {
+              echo "0";
             } ?>
           </strong>
-        </div>
+          </span>
         <img src="img/carrinho.png" width="25">
       </a>&nbsp;&nbsp;
     </div>

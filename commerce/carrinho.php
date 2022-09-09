@@ -40,8 +40,8 @@
 <hr>
 <form method="post">
     <div class="text-center">
-        <a href="" class="btn btn-primary" style="background-color: #2a6f97; border:#2a6f97; width: 30%; height: 69px; text-align:center; vertical-align:bottom; line-height: 53px;">Finalizar Compra</a><br><br>
-        <input type="submit" value="Limpar Carrinho" name="del_carrinho" class="btn btn-primary" style="background-color: #2a6f97; border:#2a6f97; width: 30%; height: 60px;">
+        <a href="" class="btn btn-primary botoes-principais" style="text-align:center; vertical-align:bottom; line-height: 50px;">Finalizar Compra</a><br><br>
+        <input type="submit" value="Limpar Carrinho" name="del_carrinho" class="btn btn-primary botoes-principais">
     </div>
 </form>
 <?php 
