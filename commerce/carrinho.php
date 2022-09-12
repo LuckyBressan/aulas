@@ -1,6 +1,6 @@
 
 <?php
-    if(isset($_SESSION['carrinho'])) {
+    if(isset($_SESSION['carrinho']) && count($_SESSION['carrinho'])>0) {
 ?>
 <table class="table">
   <thead>
@@ -23,7 +23,7 @@
             <tr>
                 
                 <td><img src="<?php echo $produto['imagem'] ?>" class="img-thumbnail" width="150" alt=""></td>
-                <td><?php echo "<h4 style='color: #2a6f97'>".$produto['descricao'].'</h4><br>'. $produto['resumo']."" ?></td>
+                <td><?php echo "<h4 style='color: #2a6f97'>".$produto['nome'].'</h4><br>'. $produto['resumo']."" ?></td>
                 <td><?php echo $produto['valor'] ?></td>
                 <td>
                     <form method="POST">

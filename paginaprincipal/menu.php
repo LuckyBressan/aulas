@@ -56,7 +56,6 @@
     <li><a href="/git/aulas/northwind/index.php?pagina=home">Northwind</a></li>
     <li><a href="/git/aulas/commerce/index.php">Commerce</a></li>
 
-
     <br>
     <a href="?logout">logout</a>
 </ul>

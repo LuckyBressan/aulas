@@ -25,15 +25,15 @@ class Aluno {
 }
 var alunos = [];
 
-function novoaluno(nome, n1, n2, n3) {
-    let aluno = new Aluno(nome, n1, n2, n3);
+function novoaluno(nome, nota1, nota2, nota3) {
+    let aluno = new Aluno(nome, nota1, nota2, nota3);
     alunos.push(aluno);
     return aluno.media();
 }
 function ListaAluno(separa_n = ' : ', separa = ' : ', separadorlinha = ";") {
     let lista = "";
     alunos.forEach(function(aluno,i) {
-        lista += aluno._nome + separa_n + aluno._n1 + separa + aluno._n2 + separa + aluno._n3 + " (Média: " + aluno.media() + ") " + separadorlinha;
+        lista += aluno._nome + separa_n + aluno._nota1 + separa + aluno._nota2 + separa + aluno._nota3 + " (Média: " + aluno.media() + ") " + separadorlinha;
     })
     return lista;
 }
@@ -46,5 +46,3 @@ function ContAluno() {
     return alunos.length;
 }
 
-/*let aluno2 = new aluno("João", 6, 9, 9);
-let aluno3 = new aluno("Gabriel", 10, 8, 8);*/

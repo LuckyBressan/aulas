@@ -9,32 +9,32 @@
   <body>
     <div class="container">
         <h1>Cadastrar Alunos</h1>
-        <form method="get" action="#" id="c_aluno">
+        <form method="post" id="c_aluno">
             <div class="mb-3">
-                <label for="nome" class="form-label">Aluno:</label>
-                <input type="text" class="form-control" id="nome" placeholder="Informe o nome do aluno..." required>
+                <label for="nome_aluno" class="form-label">Aluno:</label>
+                <input type="text" class="form-control" id="nome_aluno" placeholder="Informe o nome do aluno..." required>
             </div>
             <div class="mb-3">
-                <label for="n1" class="form-label">1º Nota:</label>
-                <input type="number" class="form-control" id="n1" placeholder="Informe 1º nota..." required>
+                <label for="nota1" class="form-label">1º Nota:</label>
+                <input type="number" class="form-control" id="nota1" placeholder="Informe 1º nota..." required>
             </div>
             <div class="mb-3">
-                <label for="n2" class="form-label">2º Nota:</label>
-                <input type="number" class="form-control" id="n2" placeholder="Informe 2º nota..." required>
+                <label for="nota2" class="form-label">2º Nota:</label>
+                <input type="number" class="form-control" id="nota2" placeholder="Informe 2º nota..." required>
             </div>
             <div class="mb-3">
-                <label for="n3" class="form-label">3º Nota:</label>
-                <input type="number" class="form-control" id="n3" placeholder="Informe a 3º nota..." required>
+                <label for="nota3" class="form-label">3º Nota:</label>
+                <input type="number" class="form-control" id="nota3" placeholder="Informe a 3º nota..." required>
             </div>
             <div class="mb-3">
-                <label for="media" class="form-label">Média:</label>
-                <input type="number" class="form-control" id="media" placeholder="" readonly>
+                <label for="media_nota" class="form-label">Média:</label>
+                <input type="number" class="form-control" id="media_nota" placeholder="" readonly>
             </div>
             <div class="mb-3">
                 <input type="submit" value="Salvar" id="salvar" class="btn btn-success">&nbsp;&nbsp;
                 <input type="button" value="Listar" id="lista" class="btn btn-primary">&nbsp;&nbsp;
                 <input type="reset" value="Limpar" id="limpa" class="btn btn-warning">&nbsp;&nbsp;
-                <input type="button" value="Limpar Array" id="limpa_tudo" class="btn btn-danger">&nbsp;&nbsp;
+                <input type="button" value="Limpar Array" id="limpa_array" class="btn btn-danger">&nbsp;&nbsp;
             </div>
             <div class="alert alert-warning">
                 <p id="dMostra"></p>
@@ -48,16 +48,16 @@
             <script src="aluno.js" lang="JavaScript"></script>
         <script lang="JavaScript">
             document.getElementById("c_aluno").onsubmit = function() {
-                let vMedia = novoaluno(document.getElementById('nome').value, document.getElementById('n1').value, document.getElementById('n2').value, 
-                                        document.getElementById('n3').value);
-                document.getElementById('media').value = vMedia;
+                let vMedia = novoaluno(document.getElementById('nome_aluno').value, document.getElementById('nota1').value, document.getElementById('nota2').value, 
+                                        document.getElementById('nota3').value);
+                document.getElementById('media_nota').value = vMedia;
                 document.getElementById('dMostra').innerHTML = "Salvo com Sucesso!!! <br> Número de Alunos: " + ContAluno();
             }
             document.getElementById('lista').onclick = function() {
                 document.getElementById('dMostra').innerHTML = ListaAluno(" : ", " - ", "<br>") + " Número de Alunos: " + ContAluno();
             }
 
-            document.getElementById("limpa_tudo").onclick = function() {
+            document.getElementById("limpa_array").onclick = function() {
                 LimpaAluno();
                 document.getElementById('dMostra').innerHTML = "Dados Apagados!!! <br> Número de Alunos: " + ContAluno();
             }
