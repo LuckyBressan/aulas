@@ -38,10 +38,18 @@
     }
   ?>
 </div>
+<br>
+<a href="?pagina=logout" class="btn btn-danger" id="logar">Logout</a>
 
 
 
-<!--<nav class="nav flex-column">
+<!--<form method="POST">
+  <input type="submit" value="Logout" class="btn btn-danger" id="logout">
+</form>
+
+
+
+nav class="nav flex-column">
   <a class="nav-link active" aria-current="page" href="#">Eletrônicos</a>
   <a class="nav-link" href="#">Link</a>
   <a class="nav-link" href="#">Link</a>

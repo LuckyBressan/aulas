@@ -43,7 +43,7 @@
 
 
 /*layout aba de login*/
-.login {
+.pg_login {
     border: 1px solid #89c2d9;
     border-radius: 10px;
     width: 400px;
@@ -51,7 +51,7 @@
     left: 35%;
     top: 18%;
 }
-#acessar {
+#logar {
     width: 100%;
     background-color: #2a6f97;
     border: #2a6f97;

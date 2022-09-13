@@ -40,7 +40,7 @@
 <hr>
 <form method="post">
     <div class="text-center">
-        <a href="" class="btn btn-primary botoes-principais" style="text-align:center; vertical-align:bottom; line-height: 50px;">Finalizar Compra</a><br><br>
+        <a href="?pagina=realizar_pedido" class="btn btn-primary botoes-principais" style="text-align:center; vertical-align:bottom; line-height: 50px;">Finalizar Compra</a><br><br>
         <input type="submit" value="Limpar Carrinho" name="del_carrinho" class="btn btn-primary botoes-principais">
     </div>
 </form>

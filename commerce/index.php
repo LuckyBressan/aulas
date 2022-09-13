@@ -2,6 +2,16 @@
     session_start();
 
     include "lib/conexao.php";
+    
+    
+    
+    if(isset($_GET['pagina']) && $_GET['pagina']=='logout') {
+        session_destroy();
+        session_start();
+    }
+
+    
+   
 ?>
 <!doctype html>
 <html lang="en">
@@ -40,7 +50,19 @@
                 $paginas->execute(array('url'=>$_GET['pagina']));
                 $linha = $paginas->fetch();
                 if(!empty($linha['url'])) {
-                    require_once $linha['url'].'.php';
+                    if($linha['url']=='realizar_pedido') {
+                        if(!isset($_SESSION['logado'])) {
+                            include 'login.php';
+                        } else {
+                            require_once $linha['url'].'.php';
+                        }
+                        
+                    } else if($linha['url']=='logout') {
+                        include 'home.php';
+                    } else {
+                        require_once $linha['url'].'.php';
+                    }
+                    
                 } else {
                     include '404.php';
                 }
