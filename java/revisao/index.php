@@ -26,6 +26,7 @@
             <div class="mb-3">
                 <input type="submit" value="Informar" id="informar" class="btn btn-success">
             </div>
+            <div id="mensagem" class="alert alert-warning"></div>
 
         </form>
     </div>
@@ -34,9 +35,9 @@
   <script lang="JavaScript">
     document.getElementById("fSalario").onsubmit = function() {
       //verifica se o salario é correto no JS
-      return verifica_salario();
-      
+      verifica_salario();
 
+      
     };
   </script>
 </html>

@@ -38,8 +38,6 @@
     }
   ?>
 </div>
-<br>
-<a href="?pagina=logout" class="btn btn-danger" id="logar">Logout</a>
 
 
 

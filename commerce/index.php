@@ -2,7 +2,7 @@
     session_start();
 
     include "lib/conexao.php";
-    
+    include "lib/autenticar.php";
     
     
     if(isset($_GET['pagina']) && $_GET['pagina']=='logout') {
@@ -59,6 +59,8 @@
                         
                     } else if($linha['url']=='logout') {
                         include 'home.php';
+                    } else if($linha['url']=='login' & isset($_SESSION['logado'])){
+                        include 'informacoes_login.php';
                     } else {
                         require_once $linha['url'].'.php';
                     }

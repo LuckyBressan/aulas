@@ -21,7 +21,7 @@
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-light" type="submit">Search</button>
-      </form>&nbsp;&nbsp;&nbsp;&nbsp;
+      </form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       
       <a href="?pagina=login" id="user">
         <img src="img/usuario.png" width="25">
