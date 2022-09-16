@@ -1,5 +1,5 @@
 <?php 
-    $sql = "SELECT p.id, p.nome, p.caracteristicas, p.valor, p.estoque, p.imagem, p.resumo, c.descricao
+    $sql = "SELECT p.id, p.nome, p.categoria_id, p.caracteristicas, p.valor, p.estoque, p.imagem, p.resumo, c.descricao, c.id
             FROM produtos p
             inner join categorias c on (p.categoria_id = c.id) WHERE p.id = :id";
     $produtos = $conn->prepare($sql);
@@ -28,7 +28,8 @@
 </div>
 <form method="post">
     <div class="text-center botao-adicionar-carrinho">
-        <input type="submit" value="Adicionar ao Carrinho" name="add_carrinho" class="btn btn-primary botoes-principais">
+        <input type="submit" value="Adicionar ao Carrinho" name="add_carrinho" class="btn btn-primary botoes-principais"><br><br>
+        <a href="?pagina=listagem&id=<?php echo $linha['categoria_id'] ?>" class="btn btn-primary botoes-principais link link-light carrinho" style="vertical-align:text-bottom; line-height:50px; " >Voltar</a>
     </div>
 </form>
 

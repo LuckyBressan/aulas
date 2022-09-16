@@ -46,6 +46,12 @@
 </form>
 <?php 
     } else {
-        echo "<h3>Você não tem produtos no carrinho</h3>";
+        ?>
+        <div class="text-center carrinho-vazio">
+            <img src="img/triste.png" width="200">
+            <br><br><br>
+            <h2 style="text-transform:uppercase; color:#2a6f97;">Você não tem produtos no carrinho</h2>
+        </div><br><br>
+        <?php
     }
 ?>

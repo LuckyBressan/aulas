@@ -12,7 +12,7 @@
                     <div class="card-body">
                         <h5 class="card-title" style="color: #2a6f97;"><?php echo $linha['nome']; ?></h5>
                         <p class="card-text" style="color: #01497c;"><?php echo $linha['resumo']; ?></p>
-                        <a href="?pagina=produtos/listagem&id=<?php echo $linha['id']; ?>" style="background-color: #89c2d9; color: white;" class="btn">Mais Informações</a>
+                        <a href="?pagina=produtos/listagem&id=<?php echo $linha['id']; ?>" style="background-color: #2a6f97; color: white;" class="btn">Mais Informações</a>
                     </div>
                 </div>
             <?php
