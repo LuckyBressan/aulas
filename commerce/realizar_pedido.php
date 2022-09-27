@@ -14,6 +14,7 @@
             $insert_item = $conn->prepare($sql_item);
             $insert_item->execute(array("venda_id"=>$venda_id, "produto_id"=>$item[0]));
         }
+        include 'email.php';
         unset($_SESSION['carrinho']);
     } else {
         ?>

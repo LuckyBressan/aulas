@@ -25,7 +25,7 @@
   </head>
   <body>
     <div class="container-fluid">
-        <img src="img/unidavi.jpg" class="img-fluid" alt="...">
+        <img src="img/unidavi.jpg" class="img-fluid"  alt="...">
         <?php 
         include "menu.php";
         echo "<div id='menu'>";

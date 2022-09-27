@@ -11,9 +11,17 @@
             $menu = $conn->prepare($sql);
             $menu->execute();
             while ($linha = $menu->fetch()) {
-              echo "<li class='nav-item'>";
+              if($linha['url']=='meus_pedidos') {
+                if(isset($_SESSION['logado'])) {
+                  echo "<li class='nav-item'>";
+                    echo "<a class='nav-link active' aria-current='page' href='?pagina={$linha['url']}' style='color: white;'>{$linha['label']}</a>";
+                  echo "</li>";
+                }
+              } else {
+                echo "<li class='nav-item'>";
                   echo "<a class='nav-link active' aria-current='page' href='?pagina={$linha['url']}' style='color: white;'>{$linha['label']}</a>";
-              echo "</li>";
+                 echo "</li>";
+              }
             }
         
         ?>S
